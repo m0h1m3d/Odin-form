@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'norse-bold';
+    src: url(/Norse-Bold.otf);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+}
+
+.card{
+    height: 90%;
+    width: 70%;
+    background-color: white;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    color: #f5bd3b;
+    border: 2px solid #f5bd3b;
+}
+
+.right{
+    height: 100%;
+    width: 70%;
+    border-radius: 5rem 0 0 5rem;
+    background-color: #f5bd3b;
+    font-family: 'norse-bold';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(500px);
+    transition: transform 1s;
+}
+
+.right p{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+span{
+    text-align: center;
+}
+
+.container{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: 600;
+    gap: 10px;
+    transform: translateX(-500px);
+    transition: transform 1.5s;
+}
+
+.container p{
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+form{   
+    height: 70%;
+    width: 100%; 
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 1rem;
+    color: #fab30f;
+}
+
+input{
+    width: 80%;
+    border-radius: 5px;
+    padding: 2px;
+    border: transparent;
+    border: 1px solid #f5bd3b;
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
+input:focus , input:hover{
+    outline: none;
+    border: 2px solid #f5bd3b;
+    opacity: 1;
+}
+
+button{
+    width: 40%;
+    height: 15%;
+    color: white;
+    font-weight: 700;
+    background-color: #f8d582;
+    border: transparent;
+    border-radius: 10px;
+    transform: translate(50%);
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: #f5bd3b;
+}
+
+.last{
+    height: 50px;
+    width: 80%;
+}
+
+.last p{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.last a{
+    color: #f8d582;
+}
+
+.last a:hover{
+    color: #f5bd3b;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+    <title>Odin form</title>
+</head>
+<body>
+    <div class="card">
+        <div class="container">
+            <p>Join Us!</p>
+            <form>
+                <label for="first-name">FIRST NAME
+                    <input type="text" name="first-name" id="first-name" pattern="^[^\d]+$">
+                </label>
+
+                <label for="last-name">LAST NAME
+                    <input type="text" name="last-name" id="last-name" pattern="^[^\d]+$">
+                </label>
+
+                <label for="email">EMAIL
+                    <input type="email" name="email" id="email">
+                </label>
+
+                <label for="password">PASSWORD
+                    <input type="password" name="password" id="password">
+                </label>
+
+                <label for="confirm">CONFIRM PASSWORD
+                    <input type="password" name="confirm" id="confirm">
+                </label>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <div class="last"><p>already have an account? <span><a href="">sign in</a></span></p></div>
+        </div>
+        <div class="right">
+            <span><img src="/odin-lined.png" alt="logo" height="170"></span>
+            <p>The Odin Project</p>
+        </div>
+    </div>
+</body>
+</html>
